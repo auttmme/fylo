@@ -7,6 +7,9 @@ import iconCollaboration from './assets/icon-collaboration.svg'
 import iconAnyFile from './assets/icon-any-file.svg'
 import illustProductive from './assets/illustration-stay-productive.png'
 import iconArrow from './assets/icon-arrow.svg'
+import TestimonialCard from './components/testimonial-card';
+
+import profile1 from './assets/profile-1.jpg'
 
 function App() {
   return (
@@ -52,13 +55,31 @@ function App() {
             <h1 className='font-raleway text-white text-4xl font-bold tracking-wider w-1/2'>Stay productive, wherever you are</h1>
             <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs</p>
             <p>Securely share files and folders with friends, family, colleagues for live collaboration. No email attachments required</p>
-            <a href='#' className='flex items-center'>
-              <p className='text-cyan'>See how Fylo works</p>
-              <img className='h-4 ml-2' src={iconArrow} alt="See how Fylo works"/>
-              {/* <hr className='bg-cyan w-1/5' /> */}
+            <a href='#' className='hover:text-white hover:border-white hover:fill-white'>
+              <div className='flex items-center'>
+                <p className='text-cyan pb-1 border-b-2 border-cyan hover:text-white hover:border-white'>See how Fylo works</p>
+                {/* <svg className='w-20 h-20 fill-cyan hover:fill-white' viewBox='0 0 24 24' xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <circle id="b" cx="6" cy="6" r="6"/>
+                    <filter x="-25%" y="-25%" width="150%" height="150%" filterUnits="objectBoundingBox" id="a"><feOffset in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0.384313725 0 0 0 0 0.878431373 0 0 0 0 0.850980392 0 0 0 0.811141304 0" in="shadowBlurOuter1"/>
+                    </filter>
+                  </defs>
+                  <g fill="none" fill-rule="evenodd">
+                    <g transform="translate(2 2)">
+                      <use fill="#000" filter="url(#a)"/>
+                      <use fill="#62E0D9"/>
+                    </g>
+                  </g>
+                  <path d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z"/>
+                </svg> */}
+                <img className='ml-3 w-6 h-6' src={iconArrow} alt="see how fylo works" />
+              </div>
             </a>
           </div>
         </div>
+      </section>
+      <section>
+        <TestimonialCard desc="Fylo has improved our team productivity by an order of magnitude. Since makign the switch our team has become a well-oiled collaboration machine" image={profile1} name="Satish Patel" role="Founder & CEO, Huddle" />
       </section>
     </div>
   );
