@@ -1,10 +1,12 @@
 import './App.css';
-import Navbar from './navbar';
+import Navbar from './components/navbar';
 import intro from './assets/illustration-intro.png'
 import iconAccessAnywhere from './assets/icon-access-anywhere.svg'
 import iconSecurity from './assets/icon-security.svg'
 import iconCollaboration from './assets/icon-collaboration.svg'
 import iconAnyFile from './assets/icon-any-file.svg'
+import illustProductive from './assets/illustration-stay-productive.png'
+import iconArrow from './assets/icon-arrow.svg'
 
 function App() {
   return (
@@ -41,6 +43,21 @@ function App() {
           <img src={iconAnyFile} alt="access-anywhere" width={"100px"} height={"auto"}/>
           <h2 className='text-xl font-bold font-raleway mt-5 mb-3'>Store any type of file</h2>
           <p className='font-open-sans text-center'>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
+        </div>
+      </section>
+      <section className='grid place-content-center'>
+        <div className='flex items-center justify-between'>
+          <img src={illustProductive} alt="stay productive illustration" />
+          <div className='text-white w-1/2 grid gap-y-4'>
+            <h1 className='font-raleway text-white text-4xl font-bold tracking-wider w-1/2'>Stay productive, wherever you are</h1>
+            <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs</p>
+            <p>Securely share files and folders with friends, family, colleagues for live collaboration. No email attachments required</p>
+            <a href='#' className='flex items-center'>
+              <p className='text-cyan'>See how Fylo works</p>
+              <img className='h-4 ml-2' src={iconArrow} alt="See how Fylo works"/>
+              {/* <hr className='bg-cyan w-1/5' /> */}
+            </a>
+          </div>
         </div>
       </section>
     </div>
