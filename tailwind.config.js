@@ -11,7 +11,8 @@ module.exports = {
       colors: {
         'main': 'hsl(218, 28%, 13%)',
         'cyan': 'hsl(176, 68%, 64%)',
-        'n-blue': 'hsl(198, 60%, 50%)'
+        'n-blue': 'hsl(198, 60%, 50%)',
+        'testi': 'hsl(219, 30%, 18%)'
       }
     },
   },
