@@ -10,8 +10,37 @@ import iconArrow from './assets/icon-arrow.svg'
 import TestimonialCard from './components/testimonial-card';
 
 import profile1 from './assets/profile-1.jpg'
+import profile2 from './assets/profile-2.jpg'
+import profile3 from './assets/profile-3.jpg'
+import EarlyAccessCard from './components/early-access-card';
+import Footer from './components/footer';
 
 function App() {
+
+  const testimonialList = [
+    {
+      id: 1,
+      name: "Satish Patel",
+      role: "Founder & CEO, Huddle",
+      image: profile1,
+      desc: "Fylo has improved our team productivity by and order of magnitude. Since making the switch our team has become a well-oiled collaboration machine."
+    },
+    {
+      id: 2,
+      name: "Bruce McKenzie",
+      role: "Founder & CEO, Huddle",
+      image: profile2,
+      desc: "Fylo has improved our team productivity by and order of magnitude. Since making the switch our team has become a well-oiled collaboration machine."
+    },
+    {
+      id: 3,
+      name: "Iva Boyd",
+      role: "Founder & CEO, Huddle",
+      image: profile3,
+      desc: "Fylo has improved our team productivity by and order of magnitude. Since making the switch our team has become a well-oiled collaboration machine."
+    }
+  ]
+
   return (
     <div className='bg-main'>
       <Navbar />
@@ -48,13 +77,13 @@ function App() {
           <p className='font-open-sans text-center'>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
         </div>
       </section>
-      <section className='grid place-content-center'>
+      <section className='grid place-content-center mt-20'>
         <div className='flex items-center justify-between'>
           <img src={illustProductive} alt="stay productive illustration" />
           <div className='text-white w-1/2 grid gap-y-4'>
             <h1 className='font-raleway text-white text-4xl font-bold tracking-wider w-1/2'>Stay productive, wherever you are</h1>
-            <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs</p>
-            <p>Securely share files and folders with friends, family, colleagues for live collaboration. No email attachments required</p>
+            <p className='font-open-sans'>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs</p>
+            <p className='font-open-sans'>Securely share files and folders with friends, family, colleagues for live collaboration. No email attachments required</p>
             <a href='#' className='hover:text-white hover:border-white hover:fill-white'>
               <div className='flex items-center'>
                 <p className='text-cyan pb-1 border-b-2 border-cyan hover:text-white hover:border-white'>See how Fylo works</p>
@@ -78,8 +107,14 @@ function App() {
           </div>
         </div>
       </section>
+      <section className='w-3/4 mx-auto mt-32'>
+        <TestimonialCard testimonial = {testimonialList} />
+      </section>
+      <section className='mt-32'>
+        <EarlyAccessCard />
+      </section>
       <section>
-        <TestimonialCard desc="Fylo has improved our team productivity by an order of magnitude. Since makign the switch our team has become a well-oiled collaboration machine" image={profile1} name="Satish Patel" role="Founder & CEO, Huddle" />
+        <Footer />
       </section>
     </div>
   );
