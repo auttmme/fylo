@@ -7,7 +7,7 @@ import iconEmail from '../assets/icon-email.svg'
 
 export default function Footer() {
   return (
-    <div className='bg-footer pt-32 pb-20 px-20'>
+    <div className='bg-footer pt-52 pb-20 px-20'>
 			<img src={logo} alt="logo" />
 			<div className='text-white mt-10 grid grid-cols-4 gap-4'>
 				<div className="flex">
