@@ -8,12 +8,13 @@ import iconAnyFile from './assets/icon-any-file.svg'
 import illustProductive from './assets/illustration-stay-productive.png'
 import iconArrow from './assets/icon-arrow.svg'
 import TestimonialCard from './components/testimonial-card';
+import EarlyAccessCard from './components/early-access-card';
+import Footer from './components/footer';
 
 import profile1 from './assets/profile-1.jpg'
 import profile2 from './assets/profile-2.jpg'
 import profile3 from './assets/profile-3.jpg'
-import EarlyAccessCard from './components/early-access-card';
-import Footer from './components/footer';
+import bgQuotes from './assets/bg-quotes.png'
 
 function App() {
 
@@ -42,7 +43,7 @@ function App() {
   ]
 
   return (
-    <div className='bg-main'>
+    <div className='bg-main relative'>
       <Navbar />
       <section className='grid place-content-center place-items-center pb-5'>
         <img src={intro} alt="illustration intro" />
@@ -107,10 +108,11 @@ function App() {
           </div>
         </div>
       </section>
-      <section className='w-3/4 mx-auto mt-32'>
+      <section className='w-3/4 mx-auto mt-32 mb-64 relative p-10'>
+        <img src={bgQuotes} alt="icon quote" className='absolute top-1 left-8' />
         <TestimonialCard testimonial = {testimonialList} />
       </section>
-      <section className='mt-32'>
+      <section className='mt-32 absolute bottom-96 left-0 right-0'>
         <EarlyAccessCard />
       </section>
       <section>
