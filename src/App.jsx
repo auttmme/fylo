@@ -89,10 +89,10 @@ function App() {
               <h1 className='font-raleway text-white text-4xl font-bold tracking-wider lg:w-1/2'>Stay productive, wherever you are</h1>
               <p className='font-open-sans lg:w-3/4'>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs</p>
               <p className='font-open-sans lg:w-3/4'>Securely share files and folders with friends, family, colleagues for live collaboration. No email attachments required</p>
-              <a href='#' className='hover:text-white hover:border-white hover:fill-white'>
-                <div className='flex items-center md:justify-between hover:text-white md:w-1/3 lg:w-1/4 pb-1 border-b-2 border-cyan hover:border-white w-1/2'>
-                  <p className='text-cyan hover:text-inherit hover:border-white mr-2lg:mr-0'>See how Fylo works</p>
-                  <svg xmlns="http://www.w3.org/2000/svg" className='bi bi-arrow-right-circle-fill w-5 h-5 text-cyan hover:text-white' fill="currentColor" viewBox="0 0 16 16">
+              <a href='#' className='group'>
+                <div className='flex items-center md:justify-between hover:text-white md:w-1/3 lg:w-1/4 pb-1 border-b-2 border-cyan group-hover:border-white w-1/2'>
+                  <p className='text-cyan hover:text-inherit group-hover:text-white mr-2lg:mr-0'>See how Fylo works</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" className='bi bi-arrow-right-circle-fill w-5 h-5 text-cyan group-hover:text-white' fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
                   </svg>
                 </div>
