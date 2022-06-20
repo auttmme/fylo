@@ -29,7 +29,7 @@ export default function EarlyAccessCard() {
         <button className='rounded-full bg-gradient-to-r from-cyan to-n-blue px-5 py-3 hover:bg-cyan hover:cursor-pointer'>Get Started For Free</button>
       </div>
       {(isValid == false && email !== '') && (
-        <p className='text-red-500 mt-3 ml-20'>{message}</p>
+        <p className='text-error mt-3 ml-20'>{message}</p>
       )}
     </div>
   )

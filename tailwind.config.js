@@ -14,7 +14,8 @@ module.exports = {
         'n-blue': 'hsl(198, 60%, 50%)',
         'testi': 'hsl(219, 30%, 18%)',
         'intro-blue': 'hsl(217, 28%, 15%)',
-        'footer': 'hsl(216, 53%, 9%)'
+        'footer': 'hsl(216, 53%, 9%)',
+        'error': 'hsl(0, 100%, 63%)'
       }
     },
   },
