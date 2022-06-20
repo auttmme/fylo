@@ -46,43 +46,47 @@ function App() {
   return (
     <div className='relative'>
       <Navbar />
-      <section className='bg-intro-blue grid place-content-center place-items-center pb-60 relative'>
-        <div className='z-10 grid place-content-center place-items-center'>
-          <img src={intro} alt="illustration intro" />
-          <h1 className='font-raleway text-white text-4xl font-bold my-7 w-3/4 text-center'>All your files in one secure location, accessible anywhere.</h1>
-          <p className='text-center text-white font-open-sans w-3/5'>
-            Fylo stores all your most important files in one secure location.
-            <br />
-            Access them wherever you need, share and collaborate with friends family, and co-workers.
-          </p>
-          <button className='rounded-full bg-gradient-to-r from-cyan to-n-blue text-white px-20 py-3 mt-5 hover:cursor-pointer'>Get Started
-          </button>
-        </div>
-      <img src={bgCurvyDesktop} alt="background curvy desktop" className='mx-auto absolute min-w-full -bottom-10'/>
-      </section>
-      <section className='bg-main z-10 pt-10'>
-        <section className='grid gap-20 grid-cols-2 place-content-center place-items-center text-white pb-10 w-3/5 mx-auto'>
-          <div className='grid place-items-center w-3/4'>
-            <img src={iconAccessAnywhere} alt="access-anywhere" />
-            <h2 className='text-xl font-bold font-raleway mt-5 mb-3'>Access your files, anywhere</h2>
-            <p className='font-open-sans text-center'>The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere</p>
-          </div>
-          <div className='grid place-items-center w-3/4'>
-            <img src={iconSecurity} alt="access-anywhere" />
-            <h2 className='text-xl font-bold font-raleway mt-5 mb-3'>Security you can trust</h2>
-            <p className='font-open-sans text-center'>2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files</p>
-          </div>
-          <div className='grid place-items-center w-3/4'>
-            <img src={iconCollaboration} alt="access-anywhere" />
-            <h2 className='text-xl font-bold font-raleway mt-5 mb-3'>Real-time collaboration</h2>
-            <p className='font-open-sans text-center'>Securely share files and folders with friends, family, and colleagues for live collaboration. No email attachments required</p>
-          </div>
-          <div className='grid place-items-center w-3/4'>
-            <img src={iconAnyFile} alt="access-anywhere" />
-            <h2 className='text-xl font-bold font-raleway mt-5 mb-3'>Store any type of file</h2>
-            <p className='font-open-sans text-center'>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
+      <div className="relative">
+        <section className='bg-intro-blue grid place-content-center place-items-center pb-60'>
+          <div className='z-10 grid place-content-center place-items-center'>
+            <img src={intro} alt="illustration intro" />
+            <h1 className='font-raleway text-white text-4xl font-bold my-7 w-3/4 text-center'>All your files in one secure location, accessible anywhere.</h1>
+            <p className='text-center text-white font-open-sans w-3/5'>
+              Fylo stores all your most important files in one secure location.
+              <br />
+              Access them wherever you need, share and collaborate with friends family, and co-workers.
+            </p>
+            <button className='rounded-full bg-gradient-to-r from-cyan to-n-blue text-white px-20 py-3 mt-5 hover:cursor-pointer hover:to-cyan'>Get Started
+            </button>
           </div>
         </section>
+        <img src={bgCurvyDesktop} alt="background curvy desktop" className='mx-auto absolute min-w-full lg:top-[500px]'/>
+        <section className="bg-main">
+          <div className='grid gap-20 grid-cols-2 place-content-center place-items-center text-white pb-10 w-3/5 mx-auto'>
+              <div className='z-10 grid place-items-center w-3/4'>
+                <img src={iconAccessAnywhere} alt="access-anywhere" />
+                <h2 className='text-xl font-bold font-raleway mt-5 mb-3'>Access your files, anywhere</h2>
+                <p className='font-open-sans text-center'>The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere</p>
+              </div>
+              <div className='z-10 grid place-items-center w-3/4'>
+                <img src={iconSecurity} alt="access-anywhere" />
+                <h2 className='text-xl font-bold font-raleway mt-5 mb-3'>Security you can trust</h2>
+                <p className='font-open-sans text-center'>2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files</p>
+              </div>
+              <div className='grid place-items-center w-3/4'>
+                <img src={iconCollaboration} alt="access-anywhere" />
+                <h2 className='text-xl font-bold font-raleway mt-5 mb-3'>Real-time collaboration</h2>
+                <p className='font-open-sans text-center'>Securely share files and folders with friends, family, and colleagues for live collaboration. No email attachments required</p>
+              </div>
+              <div className='grid place-items-center w-3/4'>
+                <img src={iconAnyFile} alt="access-anywhere" />
+                <h2 className='text-xl font-bold font-raleway mt-5 mb-3'>Store any type of file</h2>
+                <p className='font-open-sans text-center'>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
+              </div>
+            </div>
+        </section>
+      </div>
+      <section className='bg-main z-10 pt-10'>
         <section className='grid place-content-center mt-20'>
           <div className='flex items-center justify-between'>
             <img src={illustProductive} alt="stay productive illustration" />
