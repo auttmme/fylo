@@ -6,15 +6,15 @@ import iconPhone from '../assets/icon-phone.svg'
 import iconEmail from '../assets/icon-email.svg'
 
 export default function Footer() {
-  return (
-    <div className='bg-footer pt-52 pb-20 px-20'>
+	return (
+    <div className='bg-footer lg:pt-52 pt-60 pb-10 px-10'>
 			<img src={logo} alt="logo" />
-			<div className='text-white mt-10 grid grid-cols-4 gap-4'>
+			<div className='text-white mt-10 grid lg:grid-cols-4 gap-4'>
 				<div className="flex w-11/12">
 					<img src={iconLocation} alt="location" className='w-4 h-4 mt-2 mr-5' />
 					<p className='font-open-sans'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
 				</div>
-				<div className='mx-auto'>
+				<div className='lg:mx-auto'>
 					<div className="flex items-center mb-5">
 						<img src={iconPhone} alt="phone number" className='w-4 h-4 mr-3' />
 						<p className='font-open-sans'>+1-543-123-4567</p>
@@ -24,20 +24,20 @@ export default function Footer() {
 						<p className='font-open-sans'>examp@fylo.com</p>
 					</div>
 				</div>
-				<div className='flex font-open-sans justify-evenly'>
+				<div className='lg:flex font-open-sans justify-evenly mt-20 lg:mt-0'>
 					<ol className=''>
 						<ul className='mb-5'>About Us</ul>
 						<ul className='mb-5'>Jobs</ul>
 						<ul className='mb-5'>Press</ul>
 						<ul>Blog</ul>
 					</ol>
-					<ol className=''>
+					<ol className='mt-10 lg:mt-0'>
 						<ul className='mb-5'>Contact Us</ul>
 						<ul className='mb-5's>Terms</ul>
 						<ul>Privacy</ul>
 					</ol>
 				</div>
-				<div className='grid grid-cols-3 gap-x-2 w-1/3 mx-auto'>
+				<div className='grid grid-cols-3 gap-x-2 w-1/3 mx-auto mt-20 lg:mt-0'>
 					<svg xmlns="http://www.w3.org/2000/svg" className='bi bi-facebook w-6 h-6 hover:text-cyan hover:cursor-pointer' fill="currentColor" viewBox="0 0 16 16">
 						<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
 					</svg>
